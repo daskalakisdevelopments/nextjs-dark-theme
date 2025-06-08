@@ -1,17 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Creating a Dark theme with Nextjs and ChadCN UI
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+
+Create the navbar navigation/navbar
+Create the theme toggler  navigation/navbar/theme
+
+https://ui.shadcn.com/docs/dark-mode/next
+Install $ npx shadcn@latest init
+Install $ npx shadcn@latest add dropdown-menu
+Install $ npx shadcn@latest add button
+Install $ npm install next-themes
+
+on layout of your app wrap the children and all your components with
+
+<ThemeProvider attribute='class' defaultTheme="system" enableSystem disableTransitionOnChange>
+         <Navbar />
+        {children}
+       </ThemeProvider>
+
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
